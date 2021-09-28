@@ -1,0 +1,17 @@
+<div id="nome">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="nome" />
+</div>
+<div id="cpf">
+    <label for="cpf">Cpf::</label>
+    <input type="text" name="cpf" [(ngModel)]="cpf" />
+</div>
+<div id="altura">
+    <label for="altura">Altura:</label>
+    <input type="number" name="altura" [(ngModel)]="altura" />
+</div>
+<div id="peso">
+    <label for="peso">Peso:</label>
+    <input type="number" name="peso" [(ngModel)]="peso" />
+</div>
+<button (click)="cadastrar()">Cadastrar</button>
