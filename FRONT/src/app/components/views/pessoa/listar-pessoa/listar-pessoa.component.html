@@ -1,1 +1,19 @@
-<p>listar-pessoa works!</p>
+<a routerLink="/produto/cadastrar">Cadastrar Produto</a>
+
+<ol>
+    <table>
+        <tr>
+          <th>Nome</th>
+          <th>Cpf</th>
+          <th>Altura</th>
+          <th>Peso</th>
+        </tr>
+        <tr *ngFor="let pessoa of pessoas">
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.cpf }}</td>
+            <td>{{ pessoa.altura }}</td>
+            <td>{{ pessoa.peso }}</td>
+        </tr>
+      </table>
+    
+</ol>

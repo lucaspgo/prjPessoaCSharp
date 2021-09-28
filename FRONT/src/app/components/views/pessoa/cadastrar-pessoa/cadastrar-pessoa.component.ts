@@ -26,7 +26,6 @@ export class CadastrarPessoaComponent implements OnInit {
             peso: this.peso,
         };
         this.service.create(pessoa).subscribe((pessoa) => {
-            console.log(pessoa);
             this.router.navigate(["pessoa/listar"]);
         });
     }
